@@ -13,7 +13,7 @@
             | Nome de Usuário          | Senha       |
             | "wolfmaciel@hotmail.com" | "123asenha" |
 
-            Esquema de Cenário: Login com campos inválidos
+            Esquema de Cenário: Login com campos inválidos como <Nome de Usuário> e <Senha>
             Quando eu insiro dados de login inválidos
             Então uma mensagem de alerta "Usuário ou senha inválidos" deve ser exibida
 
