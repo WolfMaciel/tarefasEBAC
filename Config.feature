@@ -5,10 +5,15 @@
             Contexto:
             Dado que sou um cliente da EBAC-SHOP
 
-            Cenário: Configurar e Adicionar Produto ao Carrinho
-            Quando eu quero configurar meu produto de acordo com meu tamanho e gosto
-            E eu escolho a quantidade desejada
+            Esquema de Cenário: Configurar e Adicionar Produto ao Carrinho
+            Quando eu quero configurar meu produto de acordo com <cor>, <tamanho> e <quantidade>
             Então devo conseguir inserir o produto no carrinho
+
+             Exemplos:
+            | Cor        | Tamanho   | Quantidade |
+            | "Vermelho" | "Pequeno" | 1          |
+            | "Azul"     | "Médio"   | 5          |
+            | "Verde"    | "Grande"  | 10         |
 
             Cenário: Validação de Configuração de Produto
             Quando tento adicionar um produto ao carrinho
@@ -23,8 +28,4 @@
             Quando eu clico no botão "limpar"
             Então as configurações devem ser restauradas ao estado original
 
-            Exemplos:
-            | Cor        | Tamanho   | Quantidade |
-            | "Vermelho" | "Pequeno" | 1          |
-            | "Azul"     | "Médio"   | 5          |
-            | "Verde"    | "Grande"  | 10         |
+           
