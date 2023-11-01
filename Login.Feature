@@ -4,15 +4,16 @@
 
             Contexto: 
             Dado que sou um cliente da EBAC-SHOP
-            Cenário: Login bem-sucedido
-            Quando eu insiro dados de login válidos
+
+            Esquema de Cenário: Login bem-sucedido
+            Quando eu insiro dados de login válidos como <Nome de usuário> e <senha>
             Então devo ser direcionado para a tela de checkout
 
             Exemplos:
             | Nome de Usuário          | Senha       |
             | "wolfmaciel@hotmail.com" | "123asenha" |
 
-            Cenário: Login com campos inválidos
+            Esquema de Cenário: Login com campos inválidos
             Quando eu insiro dados de login inválidos
             Então uma mensagem de alerta "Usuário ou senha inválidos" deve ser exibida
 
